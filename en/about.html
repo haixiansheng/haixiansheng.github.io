@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About · Free Online Image Tools</title>
+<meta name="description" content="About this site: a set of free image tools that run entirely in your browser — images are never uploaded.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>About</h1>
+    <p class="sub">A set of free image tools that run entirely in your browser</p>
+  </header>
+
+  <section class="panel content">
+    <h2>Why we built these</h2>
+    <p>Most "free online image tools" work by <b>uploading your image to their servers</b> and
+       sending the result back. That's fine for public stock photos — but if you're handling
+       <b>screenshots, IDs, contracts or private photos of people</b>, handing them to an
+       unknown server is a privacy risk in itself.</p>
+    <p>So we built a set of tools with <b>no server at all</b>. Everything runs in your browser
+       and your images never leave your device. This isn't a promise not to store them —
+       there is <b>physically nowhere to store them</b>.</p>
+
+    <h2>Available tools</h2>
+    <ul>
+      <li><b>Face Mosaic</b> — automatic face blurring with three effect styles</li>
+      <li><b>Image Compressor</b> — up to 90% smaller, with quality and target-size modes</li>
+      <li><b>Image Converter</b> — PNG / JPG / WebP / BMP with proper transparency handling</li>
+    </ul>
+    <p>All free, no sign-up, no watermark, no usage limits.</p>
+
+    <h2>How it works</h2>
+    <ul>
+      <li><b>Canvas API</b> — decode, redraw and re-encode images locally</li>
+      <li><b>Blob / toBlob()</b> — produce downloadable files without a server round-trip</li>
+      <li><b>On-device face detection</b> (face-api.js) — the model ships with the page and runs locally</li>
+    </ul>
+    <p>No server-side computation is involved, so everything works offline after first load.</p>
+
+    <h2>Verify it yourself</h2>
+    <p>Press <b>F12</b> → <b>Network</b> panel → clear it → process an image. If you only see the
+       page's own static assets (html/css/js), <b>your image was not uploaded</b>. The test cannot
+       be faked.</p>
+    <p>Even more direct: load a tool, <b>disconnect your network</b>, then process an image.
+       If it still works, the computation is local.</p>
+
+    <h2>Privacy bonus</h2>
+    <p>Re-encoding drops the original EXIF metadata (including GPS coordinates) as a technical
+       side effect — which protects your location privacy.</p>
+
+    <h2>Open source</h2>
+    <p>All tools are MIT licensed; source on
+       <a href="https://github.com/haixiansheng" target="_blank" rel="noopener">GitHub</a>.</p>
+
+    <h2>Disclaimer</h2>
+    <p>Provided "as is", with no guarantee of results. Verify important files yourself and keep
+       backups of originals. For lawful use only.</p>
+  </section>
+
+  <footer>
+    <nav class="foot-nav">
+      <a href="index.html">Home</a> ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="https://github.com/haixiansheng" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <p class="copy">© 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>

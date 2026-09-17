@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# 广告爬虫（AdSense 需要）
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+Sitemap: https://haixiansheng.github.io/sitemap.xml
+
+# 子工具站 sitemap（同域名，便于爬虫发现）
+# https://haixiansheng.github.io/face-mosaic/sitemap.xml
+# https://haixiansheng.github.io/image-compressor/sitemap.xml
+# https://haixiansheng.github.io/image-converter/sitemap.xml
