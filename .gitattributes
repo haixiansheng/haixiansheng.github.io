@@ -2,3 +2,5 @@
 *.jpg binary
 *.jpeg binary
 *.webp binary
+# Google 验证文件：禁止换行符转换，保证字节一致
+google*.html -text
