@@ -4,3 +4,6 @@
 *.webp binary
 # Google 验证文件：禁止换行符转换，保证字节一致
 google*.html -text
+
+# 搜索引擎验证文件：必须字节精确，禁止换行符转换
+BingSiteAuth.xml -text
