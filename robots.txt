@@ -8,9 +8,9 @@ Allow: /
 User-agent: AdsBot-Google
 Allow: /
 
+# 全部 5 个 sitemap —— 蜘蛛会在抓取本文件时自动发现
 Sitemap: https://haixiansheng.github.io/sitemap.xml
-
-# 子工具站 sitemap（同域名，便于爬虫发现）
-# https://haixiansheng.github.io/face-mosaic/sitemap.xml
-# https://haixiansheng.github.io/image-compressor/sitemap.xml
-# https://haixiansheng.github.io/image-converter/sitemap.xml
+Sitemap: https://haixiansheng.github.io/face-mosaic/sitemap.xml
+Sitemap: https://haixiansheng.github.io/image-compressor/sitemap.xml
+Sitemap: https://haixiansheng.github.io/image-converter/sitemap.xml
+Sitemap: https://haixiansheng.github.io/image-watermark/sitemap.xml
